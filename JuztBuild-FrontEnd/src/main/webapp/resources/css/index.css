@@ -1,0 +1,24 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+ body  {
+  background-image: url("https://i.imgur.com/lTgOyMJh.jpg");
+  background-color: #333333;
+}
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus {
+  outline: none;
+  background-color: #fff;
+  color: #666;
+  border-color: #0d0d0d;
+}
+/* Disabled */
+.uk-input:disabled,
+.uk-select:disabled,
+.uk-textarea:disabled {
+  background-color: #f8f8f8;
+  color: #999;
+  border-color: #0d0d0d;
+}
