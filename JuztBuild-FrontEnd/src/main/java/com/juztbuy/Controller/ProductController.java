@@ -49,7 +49,7 @@ public class ProductController {
 			model.addAttribute("searchWord", request.getParameter("key"));
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
 		return "search";
 	}

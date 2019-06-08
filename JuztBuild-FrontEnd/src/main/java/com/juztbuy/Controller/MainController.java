@@ -97,20 +97,20 @@ public class MainController {
 	public String addAddress(@ModelAttribute("address") Address address) {
 	      address_Service.addAddress(address);
 	
-		return "redirect:/Profile{userId}";
+		return "redirect:/Profile {userId}";
 		
 		
 	}
 	@RequestMapping("/UpdateAddress{userId}")
 	public String updateAddress(@ModelAttribute("address") Address address) {
 		    address_Service.upadetAddress(address);
-		return "redirect:/Profile{userId}";
+		return "redirect:/Profile {userId}";
 	}
 	@RequestMapping("/DeleteAddress{addressId}/{userId}")
 	  public String deleteAddress(@PathVariable("addressId") int id,Model model) {
 		Address address = address_Service.getAddressById(id);
 		address_Service.deletAddress(address);
-		return "redirect:/Profile{userId}";
+		return "redirect:/Profile {userId}";
 		
 	}
 	
